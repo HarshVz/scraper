@@ -1,0 +1,39 @@
+# Node modules
+/node_modules
+
+# Environment variables
+/.env
+
+# Vercel deployment files
+/.vercel
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+/tmp
+
+# Screenshots and other generated files
+/screenshots/
+
+# Puppeteer Chromium binaries
+/.local-chromium
+
+# Build output (if you have a build step)
+dist/
+build/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE specific files (if you're using any of these)
+.idea/
+.vscode/
+
+# npm package lock files (Optional, if you're not using version locking)
+package-lock.json
+yarn.lock
