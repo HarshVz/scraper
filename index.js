@@ -1,4 +1,3 @@
-// index.js
 const express = require("express");
 const ytdl = require("@distube/ytdl-core");
 const serverless = require("serverless-http");
@@ -36,5 +35,5 @@ const secondsToMins = (seconds) => {
     return Math.floor(seconds / 60);
 };
 
-// Use serverless-http to wrap the Express app for Vercel
-module.exports.handler = serverless(app);
+// Export the serverless handler (required for Vercel)
+module.exports = serverless(app);  // This is the correct export for serverless apps
